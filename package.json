@@ -1,7 +1,7 @@
 {
   "name": "grunt-mjml",
   "description": "Grunt integration for mjml, the email template engine",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "homepage": "https://github.com/smbeiragh/grunt-mjml",
   "author": {
     "name": "smbeiragh",
@@ -31,12 +31,15 @@
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-nodeunit": "^1.0.0",
     "grunt": "~1.0.1",
-    "mjml": "2.x"
+    "mjml": "3.x"
   },
   "keywords": [
-    "gruntplugin"
+    "gruntplugin",
+    "mjml",
+    "grunt",
+    "plugin"
   ],
   "peerDependencies": {
-    "mjml": "2.x"
+    "mjml": "3.x"
   }
 }

@@ -16,13 +16,20 @@ module.exports = function(grunt) {
 
   function compile(src, dest){
     var srcContent;
+    var res;
     try{
       srcContent = grunt.file.read(src);
-      srcContent = mjml.mjml2html(srcContent);
-      grunt.file.write(dest, srcContent);
-      // Print a success message.
-      grunt.log.writeln('File "' + dest + '" created.');
-    }catch(e){
+      res = mjml.mjml2html(srcContent);
+      if (res.errors && res.errors.length) {
+        grunt.log.error('1error processing file ' + src);
+        grunt.fatal(JSON.stringify(res.errors, null, 4));
+      } else {
+        // write result
+        grunt.file.write(dest, res.html);
+        // Print a success message.
+        grunt.log.writeln('File "' + dest + '" created.');
+      }
+    } catch(e) {
       grunt.log.error('error processing file ' + src);
       grunt.fatal(e);
     }
