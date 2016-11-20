@@ -1,7 +1,7 @@
 {
   "name": "grunt-mjml",
   "description": "Grunt integration for mjml, the email template engine",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/smbeiragh/grunt-mjml",
   "author": {
     "name": "smbeiragh",
