@@ -19,7 +19,7 @@ module.exports = function(grunt) {
     var res;
     try{
       srcContent = grunt.file.read(src);
-      res = mjml.mjml2html(srcContent);
+      res = mjml(srcContent);
       if (res.errors && res.errors.length) {
         grunt.log.error('error processing file ' + src);
         grunt.fatal(JSON.stringify(res.errors, null, 4));
