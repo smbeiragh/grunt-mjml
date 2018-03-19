@@ -58,3 +58,5 @@ grunt.initConfig({
 ## Release History
 - make MJML as Peer Dependencie
 - upgrade MJML Peer Dependencie to 3.x
+- Upgrade MJML peer Dependencie to 4.x
+- Support Yarn and npm 5.X
