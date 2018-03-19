@@ -30,7 +30,7 @@ exports.mjml = {
   default_options: function(test) {
     test.expect(1);
 
-    test.ok(grunt.file.exists('tmp/test.html'), 'html file should be exists');
+    test.ok(grunt.file.exists('tmp/test.html'), 'The HTML file should exist.');
 
     test.done();
   },
