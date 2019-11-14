@@ -8,7 +8,7 @@
     "email": "fraticiudan@gmail.com"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/danfraticiu"
+    "registry": "https://npm.pkg.github.com/"
   },
   "repository": {
     "type": "git",
