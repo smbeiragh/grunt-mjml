@@ -1,5 +1,5 @@
 {
-  "name": "grunt-mjml",
+  "name": "@danfraticiu/grunt-mjml",
   "description": "Grunt integration for mjml, the email template engine",
   "version": "1.0.2",
   "homepage": "https://github.com/danfraticiu/grunt-mjml",
@@ -8,7 +8,7 @@
     "email": "fraticiudan@gmail.com"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/danfraticiu"
   },
   "repository": {
     "type": "git",
