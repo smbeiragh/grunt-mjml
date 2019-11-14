@@ -14,12 +14,12 @@ var mjml = require('mjml');
 
 module.exports = function(grunt) {
 
-  function compile(src, dest){
+  function compile(src, dest, options){
     var srcContent;
     var res;
     try{
       srcContent = grunt.file.read(src);
-      res = (mjml.mjml2html || mjml)(srcContent);
+      res = (mjml.mjml2html || mjml)(srcContent, options);
       if (res.errors && res.errors.length) {
         grunt.log.error('error processing file ' + src);
         grunt.fatal(JSON.stringify(res.errors, null, 4));
@@ -53,9 +53,9 @@ module.exports = function(grunt) {
       }).forEach(function(src){
         // Write the destination file.
         if(!isDestFile) {
-          compile(src, path.join( f.dest , path.basename(src)));
+          compile(src, path.join( f.dest , path.basename(src), options));
         } else {
-          compile(src, f.dest);
+          compile(src, f.dest, options);
         }
       });
 
