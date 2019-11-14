@@ -1,5 +1,5 @@
 {
-  "name": "grunt-mjml",
+  "name": "grunt-mjml-improved",
   "description": "Grunt integration for mjml, the email template engine",
   "version": "1.0.2",
   "homepage": "https://github.com/danfraticiu/grunt-mjml",
